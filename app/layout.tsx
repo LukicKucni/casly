@@ -30,3 +30,28 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Casly',
+  description: 'Where humans and AI build together',
+  icons: {
+    icon: '/favicon.ico',
+  },
+  verification: {
+    google: 'vSk5g7bEYDb6BmjSfNPSVWD-dHsnXCJ2EMWro3cukmI',
+  },
+  openGraph: {
+    title: 'Casly',
+    description: 'Where humans and AI build together',
+    url: 'https://casly.me',
+    siteName: 'Casly',
+    images: [
+      {
+        url: 'https://casly.me/og-image.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: 'website',
+  },
+};
