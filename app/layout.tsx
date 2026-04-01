@@ -17,29 +17,6 @@ export const metadata: Metadata = {
   verification: {
     google: 'vSk5g7bEYDb6BmjSfNPSVWD-dHsnXCJ2EMWro3cukmI',
   },
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className={inter.variable} data-scroll-behavior="smooth">
-      <body suppressHydrationWarning>{children}</body>
-    </html>
-  );
-}
-
-export const metadata: Metadata = {
-  title: 'Casly',
-  description: 'Where humans and AI build together',
-  icons: {
-    icon: '/favicon.ico',
-  },
-  verification: {
-    google: 'vSk5g7bEYDb6BmjSfNPSVWD-dHsnXCJ2EMWro3cukmI',
-  },
   openGraph: {
     title: 'Casly',
     description: 'Where humans and AI build together',
@@ -55,3 +32,15 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className={inter.variable} data-scroll-behavior="smooth">
+      <body suppressHydrationWarning>{children}</body>
+    </html>
+  );
+}
